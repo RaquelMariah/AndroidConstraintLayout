@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
@@ -41,17 +51,56 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="379dp"
-        android:layout_height="208dp"
+        android:layout_width="365dp"
+        android:layout_height="298dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-condensed-light"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam, turpis quis tincidunt pretium, sapien diam vehicula elit, vel porta enim est id quam. Aliquam eget justo dui. Mauris consequat libero id ornare varius. Nullam non odio pulvinar, porttitor velit sed, efficitur tellus. Donec placerat ornare arcu, nec vehicula ante. Etiam posuere mi nec neque finibus tincidunt. Mauris tempus hendrerit odio, id aliquet nisi convallis at. Pellentesque eu lorem lectus. Donec congue volutpat mauris vitae vehicula. Cras mollis dui vitae nisl lobortis consequat. Etiam condimentum at nisi luctus varius. "
-        android:textAlignment="textStart"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam, turpis quis tincidunt pretium, sapien diam vehicula elit, vel porta enim est id quam. Aliquam eget justo dui. Mauris consequat libero id ornare varius. Nullam non odio pulvinar, porttitor velit sed, efficitur tellus. Donec placerat ornare arcu, nec vehicula ante. Etiam posuere mi nec neque finibus tincidunt. Mauris tempus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam, turpis quis tincidunt pretium, sapien diam vehicula elit, vel porta enim est id quam. Aliquam eget justo dui. Mauris consequat libero id ornare varius. Nullam non odio pulvinar, porttitor velit sed, efficitur tellus. Donec placerat ornare arcu, nec vehicula ante. Etiam posuere mi nec neque finibus tincidunt. Mauris tempus hendrerit hendrerit "
         android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="BY Lorem IPsum"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button10"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
